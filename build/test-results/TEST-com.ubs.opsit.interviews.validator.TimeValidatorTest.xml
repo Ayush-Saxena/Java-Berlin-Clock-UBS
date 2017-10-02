@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.ubs.opsit.interviews.validator.TimeValidatorTest" tests="11" skipped="0" failures="0" errors="0" timestamp="2017-10-02T21:39:58" hostname="DLUASAX3077204" time="0.0">
+  <properties/>
+  <testcase name="invalidTimeFormat" classname="com.ubs.opsit.interviews.validator.TimeValidatorTest" time="0.0"/>
+  <testcase name="invalidFormat_invalidDelimiter" classname="com.ubs.opsit.interviews.validator.TimeValidatorTest" time="0.0"/>
+  <testcase name="validTime" classname="com.ubs.opsit.interviews.validator.TimeValidatorTest" time="0.0"/>
+  <testcase name="invalidTimeValue" classname="com.ubs.opsit.interviews.validator.TimeValidatorTest" time="0.0"/>
+  <testcase name="invalidTime_null" classname="com.ubs.opsit.interviews.validator.TimeValidatorTest" time="0.0"/>
+  <testcase name="invalidFormat_singleDigits" classname="com.ubs.opsit.interviews.validator.TimeValidatorTest" time="0.0"/>
+  <testcase name="outOfBound_Hours" classname="com.ubs.opsit.interviews.validator.TimeValidatorTest" time="0.0"/>
+  <testcase name="outOfBound_Mins" classname="com.ubs.opsit.interviews.validator.TimeValidatorTest" time="0.0"/>
+  <testcase name="outOfBound_Secs" classname="com.ubs.opsit.interviews.validator.TimeValidatorTest" time="0.0"/>
+  <testcase name="invalidTimeFormat_ExcessTime" classname="com.ubs.opsit.interviews.validator.TimeValidatorTest" time="0.0"/>
+  <testcase name="validMidNight" classname="com.ubs.opsit.interviews.validator.TimeValidatorTest" time="0.0"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

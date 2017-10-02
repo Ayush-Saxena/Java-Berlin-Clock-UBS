@@ -2,7 +2,7 @@ package com.ubs.opsit.interviews.utility;
 
 public class Constants {
 
-	public static final char LAMP_OFF_SIGNAL = 'O';
+	public static final String LAMP_OFF_SIGNAL = "O";
 	public static final String EXPECTED_TIME_FORMAT = "^([0-1]\\d|2[0-4]):([0-5]\\d):([0-5]\\d)$";
 	public static final String INVALID_TIME_FORMAT_MSG = "Input time is in invalid Format";
 	public static final String INVALID_TIME_VALUES_MSG = "Input time values are invalid";

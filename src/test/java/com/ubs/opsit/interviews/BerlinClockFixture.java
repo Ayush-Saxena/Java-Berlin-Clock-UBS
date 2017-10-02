@@ -7,6 +7,7 @@ import org.jbehave.core.annotations.Then;
 import org.jbehave.core.annotations.When;
 import org.junit.Test;
 
+import com.ubs.opsit.interviews.domain.Colour;
 import com.ubs.opsit.interviews.impl.BerlinClock;
 
 /**
@@ -34,15 +35,15 @@ public class BerlinClockFixture {
 	
 		//Use Clock Builder to create Berlin Clock
 		berlinClock = new BerlinClock.Builder()
-				.row().lamp(1, 'Y')
+				.row().lamp(1, Colour.Y)
 				.and()
-				.row().lamp(4, 'R')
+				.row().lamp(4, Colour.R)
 				.and()
-				.row().lamp(4, 'R')
+				.row().lamp(4, Colour.R)
 				.and()
-				.row().lamp(2, 'Y').lamp(1, 'R').lamp(2, 'Y').lamp(1, 'R').lamp(2, 'Y').lamp(1, 'R').lamp(2, 'Y')
+				.row().lamp(2, Colour.Y).lamp(1, Colour.R).lamp(2, Colour.Y).lamp(1, Colour.R).lamp(2, Colour.Y).lamp(1, Colour.R).lamp(2, Colour.Y)
 				.and()
-				.row().lamp(4, 'Y').build();
+				.row().lamp(4, Colour.Y).build();
 
 		assertThat(theExpectedBerlinClockOutput).isEqualTo(berlinClock.convertTime(theTime));
 	}

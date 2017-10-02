@@ -4,9 +4,9 @@ public class Lamp {
 
 	private boolean state;
 
-	private char colour;
+	private Colour colour;
 
-	public Lamp(char colour) {
+	public Lamp(Colour colour) {
 
 		this.state = false; // initiallyOff
 		this.colour = colour;
@@ -21,11 +21,11 @@ public class Lamp {
 		this.state = state;
 	}
 
-	public char getColour() {
+	public Colour getColour() {
 		return colour;
 	}
 
-	public void setColour(char colour) {
+	public void setColour(Colour colour) {
 		this.colour = colour;
 	}
 

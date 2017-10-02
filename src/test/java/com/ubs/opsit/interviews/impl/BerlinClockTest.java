@@ -5,6 +5,8 @@ import static org.assertj.core.api.Assertions.assertThat;
 import org.junit.Before;
 import org.junit.Test;
 
+import com.ubs.opsit.interviews.domain.Colour;
+
 public class BerlinClockTest {
 
 	BerlinClock clock;
@@ -12,16 +14,16 @@ public class BerlinClockTest {
 	@Before
 	public void setUp() {
 
-		clock = new BerlinClock.Builder()
-				.row().lamp(1, 'Y')
+		clock =  new BerlinClock.Builder()
+				.row().lamp(1, Colour.Y)
 				.and()
-				.row().lamp(4, 'R')
+				.row().lamp(4, Colour.R)
 				.and()
-				.row().lamp(4, 'R')
+				.row().lamp(4, Colour.R)
 				.and()
-				.row().lamp(2, 'Y').lamp(1, 'R').lamp(2, 'Y').lamp(1, 'R').lamp(2, 'Y').lamp(1, 'R').lamp(2, 'Y')
+				.row().lamp(2, Colour.Y).lamp(1, Colour.R).lamp(2, Colour.Y).lamp(1, Colour.R).lamp(2, Colour.Y).lamp(1, Colour.R).lamp(2, Colour.Y)
 				.and()
-				.row().lamp(4, 'Y').build();
+				.row().lamp(4, Colour.Y).build();
 		
 		
 	}

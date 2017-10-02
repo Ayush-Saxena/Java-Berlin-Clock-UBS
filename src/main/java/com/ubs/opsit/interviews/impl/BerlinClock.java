@@ -8,6 +8,7 @@ import java.util.List;
 import java.util.stream.Collectors;
 
 import com.ubs.opsit.interviews.TimeConverter;
+import com.ubs.opsit.interviews.domain.Colour;
 import com.ubs.opsit.interviews.domain.Lamp;
 import com.ubs.opsit.interviews.dto.TimeInUnits;
 import com.ubs.opsit.interviews.utility.ClockUtil;
@@ -45,7 +46,7 @@ public class BerlinClock implements TimeConverter {
 
 		}
 
-		public Builder lamp(int num, char colour) {
+		public Builder lamp(int num, Colour colour) {
 
 			int lastRow = clock.size() - 1;
 			for (int i = 0; i < num; i++) {
@@ -136,7 +137,7 @@ public class BerlinClock implements TimeConverter {
 	public String toString() {
 
 		return this.clock.stream().map(e -> {
-			return e.stream().map(l -> String.valueOf(ClockUtil.getStateOfLamp(l))).collect(Collectors.joining(""));
+			return e.stream().map(l -> ClockUtil.getStateOfLamp(l)).collect(Collectors.joining(""));
 		}).collect(Collectors.joining(String.valueOf('\r') + String.valueOf('\n')));
 
 	}
